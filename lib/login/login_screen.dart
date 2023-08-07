@@ -1,5 +1,9 @@
 
 import 'package:authentication/home.dart';
+import 'package:authentication/login/model_view.dart';
+import 'package:authentication/register/registerDoctor/view.dart';
+import 'package:authentication/register/registerpatient/view.dart';
+import 'package:authentication/register/registerpatientCompanion/view.dart';
 import 'package:conditional_builder_null_safety/conditional_builder_null_safety.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -7,7 +11,6 @@ import '../components/components.dart';
 import '../components/widgets/my_button.dart';
 import '../components/widgets/text_field.dart';
 import '../local/cache_helper.dart';
-import '../register/register/view.dart';
 import 'login/cubit.dart';
 import 'login/state.dart';
 
@@ -141,7 +144,7 @@ class LoginScreen extends StatelessWidget {
                               function: () {
                                 navigateTo(
                                   context,
-                                  RegisterScreen(),
+                                 Model_view()
                                 );
                               },
                               text: 'register',
